@@ -1,8 +1,9 @@
-alert ('hey');
-
-const array = [5,2,12,15,25];
- 
-const dividedByFive = array.filter(item => item % 5 === 0);
-const dividedByFiveSum = dividedByFive.reduce((res, item) => res += item, 0);
- 
-console.log(`Делятся без остатка на 5: ${dividedByFive}. Их сумма: ${dividedByFiveSum}`)
+const arr = [6, 7, 88, 5, 35, 75];
+const res = arr.reduce((a, c)=>{
+  if(c % 5 == 0 && c % 7 !== 0){
+    a.sum += c;
+    a.number++
+  }
+  return a
+}, {sum:0, number:0});
+console.log("Кількість: %i, сума: %i", res.sum, res.number)
