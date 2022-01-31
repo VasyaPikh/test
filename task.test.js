@@ -1,2 +1,2 @@
-let {zadacha1} = require ('./task')
+const {zadacha1} = require ('./task')
 

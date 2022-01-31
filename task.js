@@ -1,6 +1,6 @@
 // math1
 
-function zadacha1 () { 
+function zadacha1() { 
 const n = 100;
  
 
